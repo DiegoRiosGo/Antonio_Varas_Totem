@@ -8,79 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pagina principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'Central/css/Estilo.css' %}">
     
-    <style>      
-        /* Estilo para el fondo del HTML */
-        .body {
-            background-color: skyblue; /* Cambia el color de fondo a celeste cielo */
+    <style>
+        body {
+            background-image: url("{% static 'Central/img/fondo.jpg' %}");
+            background-size: cover; /* Ajusta la imagen al tamaño del viewport */
+            background-repeat: no-repeat; /* Evita la repetición de la imagen */
         }
-
-        /* Estilo para el encabezado */
-        .header {
-            background-color: rgb(255, 255, 255); /* Cambia el fondo del encabezado a blanco */
-            text-align: center;
-        }
-
-        header h1 {
-            font-weight: bold; /* Establece el texto en negrita (bold) */
-            color: navy; /* Cambia el color del texto a azul oscuro (navy) */
-        }
-
-
-        /* Estilo para los botones */
-        .button {
-            display: block;
-            padding: 10px;
-            background-color: rgb(255, 220, 22);
-            border: 2px solid rgb(252, 226, 31);
-            text-align: center;
-            font-size: 20px;
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: black;
-        }
-
-        /* Cambiar color del texto al pasar el ratón por encima del botón */
-        .button:hover {
-            color: white;
-        }
-
-        /* Estilo para el logotipo en los botones */
-        .logo {
-            width: 100px; /* Ajusta el ancho del logotipo según tus necesidades */
-            margin-right: 20px; /* Espacio entre el logotipo y el texto del botón */
-            vertical-align: middle; /* Centra verticalmente el logotipo junto al texto */
-        }
-        ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
     </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    
+
 </head>
 
     <body class="body">
-    
-        <header class="header">
-            <br>
-            <h1>Informaciones</h1>
-            <br>
-        </header>
-        <br>
-        <br>
 
+        <h1>Sede {{sede}}</h1>
+           
         <div class="container">
-         <!-- Lista de botones con logotipos -->
          <div class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-4 "> <!-- Center the logos and buttons horizontally -->
+            <div class="col-md-4 ">
                 <a  class="button" id="matricula">            
                     Matriculas 
                 </a>
@@ -119,10 +67,7 @@
             </div>
         </div>
         
-        
 
-
-        
 
 
         <script>
@@ -132,7 +77,7 @@
             });
     
             document.getElementById("asignatura").addEventListener("click", function () {
-                window.location.href = "https://www.ejemplo2.com";
+                window.location.href = "https://www.youtube.com/watch?v=kMIaYXxLnUA&list=RDMM&start_radio=1&rv=xE8gFafKTWU";
             });
     
             document.getElementById("web").addEventListener("click", function () {
@@ -143,6 +88,7 @@
                 window.location.href = "https://www.ejemplo3.com";
             });
         </script>
+        
     </body>
      
 </html> 
