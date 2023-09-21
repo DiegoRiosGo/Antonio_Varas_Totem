@@ -23,14 +23,14 @@
 
     <body class="body">
 
-        <h1>Sede {{sede}}</h1>
+        <h1>Sede {{sede|default:"No data available" }}</h1>
            
         <div class="container">
          <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4 ">
-                <a  class="button" id="matricula">            
-                    Matriculas 
+                <a  href="{{boton1_url|default:'#'}}" class="button" >            
+                    {{boton1_nombre|default:"Button 1"}} 
                 </a>
             </div>
             <div class="col-md-4"></div>
@@ -39,8 +39,8 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <a  class="button" id="asignatura">            
-                        Inscripción de <br> Asignaturas
+                    <a href="{{boton2_url|default:'#'}}" class="button" >            
+                        {{boton2_nombre|default:"Button 1"}}
                     </a>
                 </div>
                 <div class="col-md-4"></div>
@@ -49,8 +49,8 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <a  class="button" id="web">            
-                        Web
+                    <a href="{{boton3_url|default:'#'}}" class="button" >            
+                        {{boton3_nombre|default:"Button 1"}}
                     </a>
                 </div>
                 <div class="col-md-4"></div>
@@ -59,35 +59,14 @@
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4">
-                    <a  class="button" id="otro">            
-                        Otros
+                    <a href="{{boton4_url|default:'#'}}" class="button" >            
+                        {{boton4_nombre|default:"Button 1"}}
                     </a>
                 </div>
                 <div class="col-md-4"></div>
             </div>
         </div>
         
-
-
-
-        <script>
-            // Asigna href a los botones
-            document.getElementById("matricula").addEventListener("click", function () {
-                window.location.href = "https://www.p4hbionics.academy/";
-            });
-    
-            document.getElementById("asignatura").addEventListener("click", function () {
-                window.location.href = "https://www.youtube.com/watch?v=kMIaYXxLnUA&list=RDMM&start_radio=1&rv=xE8gFafKTWU";
-            });
-    
-            document.getElementById("web").addEventListener("click", function () {
-                window.location.href = "https://www.ejemplo3.com";
-            });
-
-            document.getElementById("otro").addEventListener("click", function () {
-                window.location.href = "https://www.ejemplo3.com";
-            });
-        </script>
         
     </body>
      
