@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import Principal,Totem
+from .views import Principal,formulario
 
 urlpatterns = [
     #html cliente
     path('',Principal,name="Principal"),
-    path('Totem/',Totem,name="Totem"),
+    path('formulario/',formulario,name="formulario"),
 
 ]

@@ -9,6 +9,21 @@ def Principal(request):
         # You can process the data here if needed
     if request.method == 'POST':
         # Retrieve form data from POST request
+        
+        # Render the result page
+       
+        return render(request, 'Central/HTML/Principal.html')
+    
+    
+
+
+
+def formulario(request):
+    if request.method == 'POST':
+        # Aquí puedes procesar los datos enviados por el formulario
+        # y mostrarlos en la misma vista o en una página diferente.
+        # Por ejemplo, puedes guardar los datos en una base de datos o
+        # simplemente mostrarlos en la misma vista.
         sede = request.POST.get('Sede')
         boton1_nombre = request.POST.get('nombreBoton1')
         boton1_url = request.POST.get('urlBoton1')
@@ -18,9 +33,8 @@ def Principal(request):
         boton3_url = request.POST.get('urlBoton3')
         boton4_nombre = request.POST.get('nombreBoton4')
         boton4_url = request.POST.get('urlBoton4')
-        # Render the result page
-       
-        return render(request, 'Central/HTML/Principal.html',{
+
+    return render(request, 'Central/HTML/Principal.html',{
             'sede': sede,
             'boton1_nombre': boton1_nombre,
             'boton1_url': boton1_url,
@@ -32,9 +46,3 @@ def Principal(request):
             'boton4_url': boton4_url,
             # Add other data to the context
         })
-    
-    
-
-def Totem(request):
-    
-    return render(request,'Central/HTML/Totem.html')
